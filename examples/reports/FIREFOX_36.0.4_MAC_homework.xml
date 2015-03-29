@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="homework"
+             errors="0"
+             failures="0"
+             tests="24">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Application exists" package="homework" skipped="0"
+    tests="2" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 103 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;h2&gt; contains text: &quot;Vehicle&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Can make a vehicle" package="homework" skipped="0"
+    tests="3" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 113 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#vehicle-0&gt; was visible after 77 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.vehicle-generated-name&gt; contains text: &quot;Honda Accord&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Info button shows vehicle details" package="homework" skipped="0"
+    tests="5" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 114 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-type&gt; contains text: &quot;car&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-name&gt; contains text: &quot;Ford Taurus&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-seats&gt; contains text: &quot;4&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-wheels&gt; contains text: &quot;4&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Making a car" package="homework" skipped="0"
+    tests="5" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 113 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-type&gt; contains text: &quot;car&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-name&gt; contains text: &quot;Ford Taurus&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-seats&gt; contains text: &quot;4&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-wheels&gt; contains text: &quot;4&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Making a motorcycle" package="homework" skipped="0"
+    tests="5" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 120 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-type&gt; contains text: &quot;motorcycle&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-name&gt; contains text: &quot;Kawasaki Ninja&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-seats&gt; contains text: &quot;1&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#vehicle-info-wheels&gt; contains text: &quot;2&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Submit only occurs if all parameters are fulfilled" package="homework" skipped="0"
+    tests="4" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 104 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#error-message&gt; is hidden.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#error-message&gt; is visible.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#error-message&gt; contains text: &quot;All fields are required.&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

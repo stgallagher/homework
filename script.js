@@ -4,36 +4,36 @@ var CS = CS || {};
 // vehicle abstraction
 CS.Abstract = (function () {
   function Vehicle(name, seats, wheels) {
-    this.privateName = name;
-    this.privateSeats = seats;
-    this.privateWheels = wheels;
+    this.name = name;
+    this.seats = seats;
+    this.wheels = wheels;
   }
   Vehicle.prototype = {
     constructor: Vehicle,
     getName: function() {
-      return this.privateName;
+      return this.name;
     },
     setName: function(name) {
-      this.privateName = name;
+      this.name = name;
     },
     getSeats: function() {
-      return this.privateSeats;
+      return this.seats;
     },
     setSeats: function(seats) {
-      this.privateSeats = Seats;
+      this.seats = seats;
     },
     getWheels: function() {
-      return this.privateWheels;
+      return this.wheels;
     },
     setWheels: function(wheels) {
-      this.privateWheels = wheels;
+      this.wheels = wheels;
     },
     info: function() {
       return {
         type: this.constructor.name.toLowerCase(),
-        name : this.privateName,
-        seats : this.privateSeats,
-        wheels : this.privateWheels
+        name : this.name,
+        seats : this.seats,
+        wheels : this.wheels
       }
     }
   };
@@ -92,7 +92,7 @@ addButton.addEventListener('click', function(e) {
   } else {
     return errorMessage.style.display = 'block';
   }
-  vehicleList.insertAdjacentHTML('beforeend', '<li><button id=vehicle-'+ v.id + ' class="info-button pure-button pure-button-primary button-xsmall">info</button>' + vehicleName.value + '</li>');
+  vehicleList.insertAdjacentHTML('beforeend', '<li class="vehicle-generated-name"><button id=vehicle-'+ v.id + ' class="info-button pure-button pure-button-primary button-xsmall">info</button>' + vehicleName.value + '</li>');
   attach(v, 'click', showVehicleInfo);
   id++;
   vehicles.push(v);
@@ -120,8 +120,9 @@ function attach(obj, event, fn) {
 function showVehicleInfo(vehicle) {
   info = vehicle.info()
   vehicleInfo.innerHTML = '';
-  vehicleInfo.insertAdjacentHTML('beforeend', '<h4>Vehicle Info</h4><table class="pure-table pure-table-striped"><tr><td>Type</td><td>' + info.type +
-                                              '<tr><td>Name</td><td>' + info.name +
-                                              '</td></tr><tr><td>Seats</td><td>' + info.seats +
-                                              '</td></tr><tr><td>Wheels</td><td>' + info.wheels + '</td></tr></table>');
+  vehicleInfo.insertAdjacentHTML('beforeend', '<h4>Vehicle Info</h4><table class="pure-table pure-table-striped">' +
+                                              '<tr><td>Type</td><td id="vehicle-info-type">' + info.type +
+                                              '<tr><td>Name</td><td id="vehicle-info-name">' + info.name +
+                                              '</td></tr><tr><td>Seats</td><td id="vehicle-info-seats">' + info.seats +
+                                              '</td></tr><tr><td>Wheels</td><td id="vehicle-info-wheels">' + info.wheels + '</td></tr></table>');
 };
