@@ -1,0 +1,39 @@
+diff --git a/fiddle_problem_original.js b/fiddle_problem_corrected.js
+index 48ecced..e37a016 100644
+--- a/fiddle_problem_original.js
++++ b/fiddle_problem_corrected.js
+@@ -4,14 +4,14 @@ function createRequest(str) {
+ 
+     return $.ajax({
+         dataType: "json",
+-        url: '/echo/json',
++        url: '/echo/json/',
+         type: 'POST',
+         data: {
+             json: JSON.stringify({
+-                text: str,
++                text: str
+             }),
+             delay: 1
+-        }
++        },
+     });
+ }
+ 
+@@ -29,11 +29,12 @@ function isGood(obj) {
+ 
+ request = createRequest(BAD);
+ 
+-request.done(function (respsone) {
++request.done(function(response) {
+     var _request = createRequest(GOOD);
+     setTimeout(function() {
+-        console.dir(respsone);
+-        answer = isGood(respsone);
+-        alert(answer);
++        _request.done(function(response2) {
++            answer = isGood(response2);
++            alert(answer);
++        });
+     }, 1000);
+ });
