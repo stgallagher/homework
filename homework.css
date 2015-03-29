@@ -1,0 +1,41 @@
+.vehicle-form {
+  margin: 30px;
+}
+.vehicles li {
+  margin: 10px;
+  font-size: x-large;
+}
+.form-text-field {
+  margin-top: 10px;
+}
+.dropdown {
+  margin-top: 10px;
+}
+.add-bar {
+  height: 30px;
+  margin-top: 20px;
+}
+.add-button {
+  float: left;
+
+}
+.button-xsmall {
+  font-size: small;
+  margin-right: 10px;
+}
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+.vehicle-info {
+
+  margin: 80px 30px;
+}
+#error-message {
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
+#vehicle-select-text {
+  background-color: white;
+  color: black;
+}

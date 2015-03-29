@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+      <link rel="stylesheet" href="homework.css">
+  </head>
+  <body>
+    <div class="pure-g">
+      <div class="pure-u-1-6">
+        <div class="pure-form vehicle-form">
+          <h2>Vehicle</h2>
+          <input id="vehicle-name" class="form-text-field" type="text" placeholder="name"/>
+          <input id="vehicle-select-text" class="form-text-field" type="text" placeholder="type" disabled/>
+          <div id="error-message">
+            All fields are required.
+          </div>
+          <div class="add-bar">
+            <button id="add-button" class="pure-button pure-button-primary button-xsmall add-button">Add</button>
+            <div class="pure-menu pure-menu-horizontal dropdown">
+                <ul class="pure-menu-list">
+                  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                      <a href="#" id="menuLink1" class="pure-menu-link">Vehicle Type</a>
+                      <ul class="pure-menu-children">
+                          <li class="pure-menu-item"><a id="car-select" href="#" class="pure-menu-link">Car</a></li>
+                          <li class="pure-menu-item"><a id="motorcycle-select" href="#" class="pure-menu-link">Motorcycle</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div id="vehicle-info" class="vehicle-info">
+        </div>
+      </div>
+      <div class="pure-u-1-6">
+        <ul id="vehicle-list" class="vehicles">
+        </ul>
+      </div>
+    </div>
+    <script data-main="app" src="./script.js"></script>
+  </body>
+</html>
